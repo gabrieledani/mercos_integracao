@@ -69,22 +69,24 @@ def read_mail():
     mailbox = MailBox(imap_server).login(login, password, 'INBOX')
 
     # *mark emails as seen on fetch, see mark_seen arg
-    for msg in mailbox.fetch(AND(from_='vedafil', seen=False)):#,mark_seen=False):  
+    for msg in mailbox.fetch(AND(from_='vendas@vedafil', seen=False)):#,mark_seen=False):  
         subject = msg.subject
         print(subject)
+        log_file.write(subject+'\n')
         
         pedido = subject[subject.find('Nº')+3:subject.find('-')-1] 
         print(pedido)
+        log_file.write(pedido+'\n')
         
         body = msg.html
-        print(body)
+        #print(body)
 
         soup = BeautifulSoup(body, 'html.parser')
 
         link = soup.find_all('a')
         # URL from which pdfs to be downloaded
         pdf_file_url = link[1].get('href', [])
-        print(link[1].get('href', []))
+        #print(link[1].get('href', []))
         
         text = soup.find_all('div')
         content = text[2].text
@@ -92,7 +94,7 @@ def read_mail():
         content = content[:att]+'\n'+content[att:]
         if content.find('Hengst / Hengst Indústria de Filtros Ltda')>=0:
             content = ''
-        print(content)
+        #print(content)
 
         # Requests URL and get response object
         response = requests.get(pdf_file_url)
@@ -110,6 +112,7 @@ def read_mail():
         if ('.pdf' in link.get('href', [])):
             i += 1
             print("Downloading file: ", i)
+            log_file.write("Downloading file: "+ str(i)+'\n')
 
             # Get response object for link
             response = requests.get(link.get('href'))
@@ -120,6 +123,7 @@ def read_mail():
             pdf.write(response.content)
             pdf.close()
             print("File ", os.path.join(dir_pdf,pedido+".pdf"), " downloaded")
+            log_file.write("File "+ os.path.join(dir_pdf,pedido+".pdf")+ " downloaded")
 
             #Generate EDI from PDF
             error = 0
@@ -131,7 +135,7 @@ def read_mail():
                 error = 1
         
         if error == 0:
-            print(edi_filename,subject,content)
+            #print(edi_filename,subject,content)
             error = send_mail(edi_filename,subject,content)
             if error == 'success':
                 try:
@@ -146,5 +150,7 @@ def read_mail():
 if __name__ == '__main__':
     #Read new e-mails
     print('Start')
+    log_file.write(str(datetime.datetime.now())+'Start'+'\n')
     read_mail()
     print('End!')
+    log_file.write(str(datetime.datetime.now())+'End!'+'\n')

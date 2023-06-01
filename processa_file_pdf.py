@@ -82,7 +82,7 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
                 #cria arquivo do EDI
                 #print('cria arquivo '+'EXPORTA_PEDIDO_HENGST_'+cliente+'_'+pedido+'.dir')
                 #log_file.write(datetime.datetime.now+'--cria arquivo '+'EXPORTA_PEDIDO_HENGST_'+cliente+'_'+pedido+'.dir')
-                edi_filename = 'EXPORTA_PEDIDO_HENGST_'+cliente+'_'+pedido+'.dir'
+                edi_filename = 'EXPORTA_PEDIDO_HENGST_'+cliente.replace(' ','_')+'_'+pedido.replace(' ','_')+'.dir'
                 log_file.write(str(datetime.datetime.now())+edi_filename+'\n')
                 edi_arquivo = open(os.path.join(dir_edi,edi_filename),'w')
 
