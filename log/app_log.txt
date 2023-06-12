@@ -418,3 +418,103 @@ Pedido Nº 7190 - Qualitat POA - Hengst
 Downloading file: 1
 File C:\PythonProjects\mercos_integracao\pdf\7190.pdf downloaded2023-05-31 23:38:30.074886--success
 2023-05-31 23:38:30.206558End!
+2023-06-12 09:01:23.791760EXPORTA_PEDIDO_HENGST_SIGA_BEM_7229.dir
+2023-06-12 09:01:37.917170EXPORTA_PEDIDO_HENGST_EMBV_AUTOPECAS_E_SERVICOS_LTDA._7230.dir
+2023-06-12 09:01:43.873062EXPORTA_PEDIDO_HENGST_HS_PARTS_7231.dir
+2023-06-12 09:01:48.698426EXPORTA_PEDIDO_HENGST_SOMAFORCE_DISTRIBUIDORA_DE_AUTOPECAS_7293.dir
+2023-06-12 09:01:53.082543EXPORTA_PEDIDO_HENGST_JJJ_COMERCIO_DE_PECAS_LTDA_-_SP_7295.dir
+2023-06-12 09:01:57.018770EXPORTA_PEDIDO_HENGST_ORBID_SA_INDUSTRIA_E_COMERCIO_7296.dir
+2023-06-12 09:02:01.379976EXPORTA_PEDIDO_HENGST_ORBID_POA_7298.dir
+2023-06-12 09:02:08.412030EXPORTA_PEDIDO_HENGST_SUPER_LUBRIFICANTES_7699.dir
+2023-06-12 09:02:12.564242EXPORTA_PEDIDO_HENGST_SUPER_LUBRIFICANTES_7700.dir
+2023-06-12 09:02:16.568398EXPORTA_PEDIDO_HENGST_BAVAUTO_AUTO_PECAS_LTDA_-ME_7701.dir
+2023-06-12 09:01:21.098547Start
+Pedido Nº 7229 - Siga Bem - Hengst
+7229
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7229.pdf downloaded2023-06-12 09:01:36.793151--success
+Pedido Nº 7230 - Qualitat POA - Hengst
+7230
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7230.pdf downloaded2023-06-12 09:01:42.027813--success
+Pedido Nº 7231 - HS Parts - Hoffelder - Hengst
+7231
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7231.pdf downloaded2023-06-12 09:01:46.800369--success
+Pedido Nº 7293 - SOMAFORCE DISTRIBUIDORA - Hengst
+7293
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7293.pdf downloaded2023-06-12 09:01:51.523270--success
+Pedido Nº 7295 - JJJ Ascari - Filial Embu das Artes - Hengst
+7295
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7295.pdf downloaded2023-06-12 09:01:56.031725--success
+Pedido Nº 7296 - Orbid - São José/SC - Hengst
+7296
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7296.pdf downloaded2023-06-12 09:02:00.021446--success
+Pedido Nº 7298 - Orbid POA - Hengst
+7298
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7298.pdf downloaded2023-06-12 09:02:04.388350--success
+Pedido Nº 7699 - Super Lubrificantes - Hengst
+7699
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7699.pdf downloaded2023-06-12 09:02:11.275592--success
+Pedido Nº 7700 - Super Lubrificantes - Hengst (Importação Exclusiva)
+7700
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7700.pdf downloaded2023-06-12 09:02:15.457985--success
+Orçamento Nº 7701 - Bavauto / Intersouth - Hengst
+7701
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7701.pdf downloaded2023-06-12 09:02:19.501972--success
+Orçamento Nº 7702 - Forauto Caminhões - Hengst
+7702
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7702.pdf downloaded2023-06-12 11:28:27.493958EXPORTA_PEDIDO_HENGST_MOTORTECH_7833.dir
+2023-06-12 11:28:32.511417EXPORTA_PEDIDO_HENGST_JJJ_COMERCIO_DE_PECAS_LTDA_7835.dir
+2023-06-12 11:28:36.494535EXPORTA_PEDIDO_HENGST_RAVAS_DISTR_DE_PECAS_E_RETIFICA_LTDA_7836.dir
+2023-06-12 11:28:46.567639EXPORTA_PEDIDO_HENGST_LUBRILAGES_COMERCIO_DE_LUBRIFICANTES_LTDA_7837.dir
+2023-06-12 11:28:51.006761EXPORTA_PEDIDO_HENGST_FELIPPE_DE_SOUZA_TESSMANN_-_EPP_7838.dir
+2023-06-12 11:28:56.098521EXPORTA_PEDIDO_HENGST_VIP_COMERCIO_VAREGISTA_DE_LUBRIFICANTES_LTDA_7996.dir
+2023-06-12 11:29:00.814328EXPORTA_PEDIDO_HENGST_RODODIS_COMERCIO_ATACADISTA_DE_PECAS_LTDA_-_ME_7998.dir
+2023-06-12 11:29:05.634140EXPORTA_PEDIDO_HENGST_DALCIN_(DALBAI)_7999.dir
+2023-06-12 11:29:10.252927EXPORTA_PEDIDO_HENGST_DALCIN_(DALBAI)_7999.dir
+2023-06-12 11:28:23.624766Start
+Pedido Nº 7833 - MTTK - Hengst
+7833
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7833.pdf downloaded2023-06-12 11:28:30.470151--success
+Pedido Nº 7835 - Ascari Auto Peças (JJJ) - Hengst
+7835
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7835.pdf downloaded2023-06-12 11:28:35.443747--success
+Pedido Nº 7836 - Ravas - POA - Hengst (Importação Exclusiva)
+7836
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7836.pdf downloaded2023-06-12 11:28:39.337040--success
+Pedido Nº 7837 - Lubrilages - Hengst
+7837
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7837.pdf downloaded2023-06-12 11:28:49.495575--success
+Pedido Nº 7838 - Felippe - Tubarão - Hengst
+7838
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7838.pdf downloaded2023-06-12 11:28:53.884486--success
+Orçamento Nº 7996 - VIP - Hengst
+7996
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7996.pdf downloaded2023-06-12 11:28:58.961510--success
+Pedido Nº 7998 - Rododis - Hengst
+7998
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7998.pdf downloaded2023-06-12 11:29:03.783581--success
+Orçamento Nº 7999 - Dalcin (Dalbai) - Hengst
+7999
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7999.pdf downloaded2023-06-12 11:29:08.455765--success
+Pedido Nº 7999 - Dalcin (Dalbai) - Hengst
+7999
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\7999.pdf downloaded2023-06-12 11:29:10.259923End!
