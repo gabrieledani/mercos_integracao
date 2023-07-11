@@ -27,7 +27,7 @@ sender_email = config['E_MAIL']['sender_email']
 receiver_email = config['E_MAIL']['receiver_email']
 
 smtp_server = config['E_MAIL']['smtp_server']
-smtp_port = config['E_MAIL']['smtp_port']
+smtp_port = int(config['E_MAIL']['smtp_port'])
 imap_server = config['E_MAIL']['smtp_server']
 
 login = config['E_MAIL']['login']
@@ -109,6 +109,8 @@ def read_mail():
         # From all links check for pdf link and if present download file
         #for link in links:
         link = links[0]
+        error = 0
+        edi_filename = ''
         if ('.pdf' in link.get('href', [])):
             i += 1
             print("Downloading file: ", i)

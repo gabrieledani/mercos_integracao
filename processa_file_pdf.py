@@ -18,10 +18,16 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
     achou_produtos = 0
     qtde_produtos = 0
     txt_produtos = ''
+    edi_filename = ''
+    
+    tem_tabela = 1
 
     for num_page in range(num_pages):
-        table = pdf.pages[num_page].extract_table()
-        
+        try:
+            table = pdf.pages[num_page].extract_table()
+        except:
+            table = []
+
         ordem_compra = 0
         obs = 0
         for line in table:
@@ -34,6 +40,8 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
             elif new_line[0].find('Orçamento') > 0:
                 ini = new_line[0].find('Orçamento')+13
                 pedido =new_line[0][ini:]
+            else:
+                pedido = ''
                 
             if new_line[0].startswith('Cliente') > 0:
                 ini = new_line[0].find('Cliente')+9
@@ -43,7 +51,10 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
                 ini = new_line[0].find('CNPJ')+6
                 fin = new_line[0].find('Inscrição Estadual')-1
                 cnpj = new_line[0][ini:fin].replace('.','').replace('/','').replace('-','')
-                #print('CNPJ=',cnpj)        
+                #print('CNPJ=',cnpj)
+            else:
+                cliente = ''
+                cnpj = ''
                     
             if new_line[0].startswith('Qtde. Total'):
                 achou_produtos = 0
@@ -69,6 +80,9 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
             if new_line[0].startswith('Condição de Pagamento'):
                 cond_pagto = new_line[0][23:]
                 dt_emis = new_line[1][new_line[1].find(':')+2:]
+            else:
+                cond_pagto = ''
+                dt_emis = ''
 
             if new_line[0].startswith('Ordem de Compra'):
                 ordem_compra = new_line[0][25:]

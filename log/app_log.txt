@@ -518,3 +518,8 @@ Pedido Nº 7999 - Dalcin (Dalbai) - Hengst
 7999
 Downloading file: 1
 File C:\PythonProjects\mercos_integracao\pdf\7999.pdf downloaded2023-06-12 11:29:10.259923End!
+2023-07-11 10:50:18.114960Start
+2023-07-11 10:51:39.044376EXPORTA_PEDIDO_HENGST__.dir
+2023-07-11 10:51:38.508772Start
+2023-07-11 10:51:39.044376End!
+2023-07-11 10:55:52.088746Start
