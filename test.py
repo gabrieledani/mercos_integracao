@@ -1,26 +1,15 @@
 # Import libraries
-import configparser
-import os
-import datetime
-
-import processa_file_pdf
-
-config = configparser.ConfigParser()
-config.read('config.ini')
-
-dir_pdf = config['CAMINHO_PDF']['dir_pdf']
-dir_edi = config['CAMINHO_EDI']['dir_edi']
-dir_log = config['LOG']['dir_log']
-
-log_file = open(os.path.join(dir_log,'app_log.txt'),'a')
-
-file = 'pedido_8000.pdf'
-
-if __name__ == '__main__':
-    #Read new e-mails
-    print('Start')
-    log_file.write(str(datetime.datetime.now())+'Start'+'\n')
-    edi_filename = processa_file_pdf.processa_file(file,dir_edi,dir_pdf,dir_log)
-    print(edi_filename)
-    print('End!')
-    log_file.write(str(datetime.datetime.now())+'End!'+'\n')
+import imaplib
+print('1')
+# Set up the IMAP connection
+mail = imaplib.IMAP4_SSL('email-ssl.com.br')
+print('2')
+mail.login('pedidos@vedafil.com.br', 'Vdfil.2022')
+print('3')
+status, messages = mail.select('inbox')
+print('4')
+print(messages[0])
+    
+# Close the connection
+mail.close()
+mail.logout()
