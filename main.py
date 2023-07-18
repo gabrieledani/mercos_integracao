@@ -125,18 +125,20 @@ def read_mail():
             pdf.write(response.content)
             pdf.close()
             print("File ", os.path.join(dir_pdf,pedido+".pdf"), " downloaded")
-            log_file.write("File "+ os.path.join(dir_pdf,pedido+".pdf")+ " downloaded")
+            log_file.write("File "+ os.path.join(dir_pdf,pedido+".pdf")+ " downloaded\n")
 
             #Generate EDI from PDF
             error = 0
+            edi_filename = ''
             edi_filename = processa_file_pdf.processa_file(file,dir_edi,dir_pdf,dir_log)
+            print('Arquivo:',edi_filename)
             try:
                 os.rename(os.path.join(dir_pdf,file) , os.path.join(dir_pdf,file+'_ok'))
             except:
-                os.remove(os.path.join(dir_pdf,file))
+                os.rename(os.path.join(dir_pdf,file) , os.path.join(dir_pdf,file+'_erro'))
                 error = 1
-        
-        if error == 0:
+        print('Erro:',error)
+        if error == 0 and edi_filename != '' and edi_filename != 'error':
             #print(edi_filename,subject,content)
             error = send_mail(edi_filename,subject,content)
             if error == 'success':
@@ -144,9 +146,11 @@ def read_mail():
                     os.rename(os.path.join(dir_edi,edi_filename) , os.path.join(dir_edi,edi_filename+'_ok'))
                     #os.rename(os.path.join(dir_edi,edi_filename+'_ok') , os.path.join(dir_edi,edi_filename))
                 except:
-                    os.remove(os.path.join(dir_edi,edi_filename))
+                    os.rename(os.path.join(dir_edi,edi_filename) , os.path.join(dir_edi,edi_filename+'_erro'))
             else:
                 print('***************',edi_filename)
+        else:
+            print('Erro:',error,'Arquivo:',edi_filename)
 
 
 if __name__ == '__main__':

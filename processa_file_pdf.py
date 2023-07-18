@@ -19,20 +19,32 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
     qtde_produtos = 0
     txt_produtos = ''
     edi_filename = ''
-    
-    tem_tabela = 1
+    pedido = ''
+    cliente = ''
+    cnpj = ''
+    cond_pagto = ''
+    dt_emis = ''
+    ordem_compra = 0
+    obs = 0
 
     for num_page in range(num_pages):
+        #if any page is empty goes back
+        try:
+            test = pdf.pages[num_page].extract_text()
+        except:
+            break
+        if test == '':
+            break
+        #anything else is error
         try:
             table = pdf.pages[num_page].extract_table()
         except:
-            table = []
-
-        ordem_compra = 0
-        obs = 0
+            return 'error'
+        if table is None:
+            return 'error'
+        
         for line in table:
             new_line = [x.replace('\n',' ') for x in line if x is not None]
-
             
             if new_line[0].find('Pedido') > 0:
                 ini = new_line[0].find('Pedido')+10
@@ -40,8 +52,6 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
             elif new_line[0].find('Orçamento') > 0:
                 ini = new_line[0].find('Orçamento')+13
                 pedido =new_line[0][ini:]
-            else:
-                pedido = ''
                 
             if new_line[0].startswith('Cliente') > 0:
                 ini = new_line[0].find('Cliente')+9
@@ -52,9 +62,6 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
                 fin = new_line[0].find('Inscrição Estadual')-1
                 cnpj = new_line[0][ini:fin].replace('.','').replace('/','').replace('-','')
                 #print('CNPJ=',cnpj)
-            else:
-                cliente = ''
-                cnpj = ''
                     
             if new_line[0].startswith('Qtde. Total'):
                 achou_produtos = 0
@@ -80,9 +87,6 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
             if new_line[0].startswith('Condição de Pagamento'):
                 cond_pagto = new_line[0][23:]
                 dt_emis = new_line[1][new_line[1].find(':')+2:]
-            else:
-                cond_pagto = ''
-                dt_emis = ''
 
             if new_line[0].startswith('Ordem de Compra'):
                 ordem_compra = new_line[0][25:]
@@ -95,7 +99,7 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
             if new_line[0].startswith('Todos os valores'):
                 #cria arquivo do EDI
                 #print('cria arquivo '+'EXPORTA_PEDIDO_HENGST_'+cliente+'_'+pedido+'.dir')
-                #log_file.write(datetime.datetime.now+'--cria arquivo '+'EXPORTA_PEDIDO_HENGST_'+cliente+'_'+pedido+'.dir')
+                
                 edi_filename = 'EXPORTA_PEDIDO_HENGST_'+cliente.replace(' ','_')+'_'+pedido.replace(' ','_')+'.dir'
                 log_file.write(str(datetime.datetime.now())+edi_filename+'\n')
                 edi_arquivo = open(os.path.join(dir_edi,edi_filename),'w')
@@ -110,10 +114,10 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
                 edi_arquivo.write('PP1'+str(qtde_produtos).zfill(4)+'0'+'{:12}'.format(str(pedido)))
                 
                 emissao = dt_emis[:7]+dt_emis[9:]#17/11/2022
-                #edi_arquivo.write(str(datetime.datetime.today().year)[2:]+str(datetime.datetime.today().month).zfill(2)+str(datetime.datetime.today().day).zfill(2))
+                
                 edi_arquivo.write(emissao.replace('/',''))
                 edi_arquivo.write('00          ')
-                #edi_arquivo.write(str(datetime.datetime.today().year)[2:]+str(datetime.datetime.today().month).zfill(2)+str(datetime.datetime.today().day).zfill(2))
+                
                 edi_arquivo.write(emissao.replace('/',''))
                 edi_arquivo.write(' '*84+'\n')
                 
@@ -145,5 +149,9 @@ def processa_file(filename,dir_edi,dir_pdf,dir_log):
                 cnpj = ''
                 dt_emis = ''
                 achou_produtos = 0
+                cond_pagto = ''
+                ordem_compra = 0
+                obs = 0
+
     pdf.close()
     return edi_filename
