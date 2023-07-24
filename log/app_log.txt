@@ -1107,3 +1107,130 @@ Pedido Nº 8531 - MTTK - Hengst
 Downloading file: 1
 File C:\PythonProjects\mercos_integracao\pdf\8531.pdf downloaded
 2023-07-18 11:05:41.852812End!
+2023-07-24 20:36:39.569335EXPORTA_PEDIDO_HENGST_RODODIS_COMERCIO_ATACADISTA_DE_PECAS_LTDA_-_ME_8539.dir
+2023-07-24 20:36:45.242140EXPORTA_PEDIDO_HENGST_JJJ_COMERCIO_DE_PECAS_LTDA_8540.dir
+2023-07-24 20:36:57.785525EXPORTA_PEDIDO_HENGST_FELIPPE_DE_SOUZA_TESSMANN_-_EPP_8543.dir
+2023-07-24 20:37:05.489438EXPORTA_PEDIDO_HENGST_RF_DISTRIBUIDORA_DE_AUTOPECAS_LTDA_8544.dir
+2023-07-24 20:37:10.079222EXPORTA_PEDIDO_HENGST_VIP_COMERCIO_VAREGISTA_DE_LUBRIFICANTES_LTDA_8551.dir
+2023-07-24 20:37:14.131686EXPORTA_PEDIDO_HENGST_ORBID_POA_8552.dir
+2023-07-24 20:37:18.067287EXPORTA_PEDIDO_HENGST_VIP_COMERCIO_VAREGISTA_DE_LUBRIFICANTES_LTDA_8554.dir
+2023-07-24 20:37:22.302926EXPORTA_PEDIDO_HENGST_FORAUTO_VEICULOS_E_PECAS_LTDA_8556.dir
+2023-07-24 20:37:28.867119EXPORTA_PEDIDO_HENGST_RODODIS_COMERCIO_ATACADISTA_DE_PECAS_LTDA_-_ME_8557.dir
+2023-07-24 20:37:32.898990EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTR._DE_PECAS_8559.dir
+2023-07-24 20:37:36.722673EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA-ME_8560.dir
+2023-07-24 20:37:40.612914EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA_8561.dir
+2023-07-24 20:37:44.544758EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA_8562.dir
+2023-07-24 20:37:48.501611EXPORTA_PEDIDO_HENGST_MTD_COMERCIO_DE_AUTO_PECAS_LTDA_8563.dir
+2023-07-24 20:37:52.484501EXPORTA_PEDIDO_HENGST_MTD_COMERCIO_DE_AUTO_PECAS_LTDA_8564.dir
+2023-07-24 20:37:56.336703EXPORTA_PEDIDO_HENGST_MTD_COMERCIO_DE_AUTO_PECAS_LTDA_8565.dir
+2023-07-24 20:38:00.224081EXPORTA_PEDIDO_HENGST_VIP_COMERCIO_VAREGISTA_DE_LUBRIFICANTES_LTDA_8566.dir
+2023-07-24 20:38:04.845710EXPORTA_PEDIDO_HENGST_IMPORT_MULTI_PECAS,_DISTRIBUICAO_DE_PECAS_8568.dir
+2023-07-24 20:36:35.336816Start
+Pedido Nº 8539 - Rododis - Hengst
+8539
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8539.pdf downloaded
+2023-07-24 20:36:42.471851--success
+Pedido Nº 8540 - Ascari Auto Peças (JJJ) - Hengst
+8540
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8540.pdf downloaded
+2023-07-24 20:36:48.421906--success
+Pedido Nº 8543 - Felippe - Tubarão - Hengst
+8543
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8543.pdf downloaded
+2023-07-24 20:37:01.138634--success
+Pedido Nº 8544 - Auto Peças RF - Hengst
+8544
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8544.pdf downloaded
+2023-07-24 20:37:08.430750--success
+Pedido Nº 8551 - VIP - Hengst
+8551
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8551.pdf downloaded
+2023-07-24 20:37:12.963382--success
+Pedido Nº 8552 - Orbid POA - Hengst
+8552
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8552.pdf downloaded
+2023-07-24 20:37:16.994851--success
+Pedido Nº 8554 - VIP - Hengst
+8554
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8554.pdf downloaded
+2023-07-24 20:37:20.948034--success
+Pedido Nº 8556 - Forauto Caminhões - Hengst
+8556
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8556.pdf downloaded
+2023-07-24 20:37:25.157880--success
+Pedido Nº 8557 - Rododis - Hengst
+8557
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8557.pdf downloaded
+2023-07-24 20:37:31.797100--success
+Pedido Nº 8559 - Eixo Sul - Matriz Fred. Westphalen - Hengst
+8559
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8559.pdf downloaded
+2023-07-24 20:37:35.765669--success
+Pedido Nº 8560 - Eixo Sul - Santa Maria - Hengst
+8560
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8560.pdf downloaded
+2023-07-24 20:37:39.623006--success
+Pedido Nº 8561 - Eixo Sul - São Miguel do Oeste - Hengst
+8561
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8561.pdf downloaded
+2023-07-24 20:37:43.486781--success
+Pedido Nº 8562 - Eixo Sul Canoas - Hengst
+8562
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8562.pdf downloaded
+2023-07-24 20:37:47.416188--success
+Pedido Nº 8563 - MTD Auto Peças - Hengst
+8563
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8563.pdf downloaded
+2023-07-24 20:37:51.364698--success
+Pedido Nº 8564 - MTD Auto Peças - Hengst
+8564
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8564.pdf downloaded
+2023-07-24 20:37:55.361963--success
+Pedido Nº 8565 - MTD Auto Peças - Hengst
+8565
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8565.pdf downloaded
+2023-07-24 20:37:59.208516--success
+Pedido Nº 8566 - VIP - Hengst
+8566
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8566.pdf downloaded
+2023-07-24 20:38:03.116555--success
+Pedido Nº 8568 - Master Parts - Hengst
+8568
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8568.pdf downloaded
+2023-07-24 20:38:07.752002--success
+Pedido Nº 8571 - Super Lubrificantes - Hengst
+8571
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8571.pdf downloaded
+2023-07-24 20:39:01.299192EXPORTA_PEDIDO_HENGST_SUPER_LUBRIFICANTES_8572.dir
+2023-07-24 20:39:05.228572EXPORTA_PEDIDO_HENGST_HS_PARTS_8573.dir
+2023-07-24 20:38:59.088044Start
+Pedido Nº 8572 - Super Lubrificantes - Hengst (Importação Exclusiva)
+8572
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8572.pdf downloaded
+2023-07-24 20:39:04.202181--success
+Pedido Nº 8573 - HS Parts - SK Parts - Hengst
+8573
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8573.pdf downloaded
+2023-07-24 20:39:08.108279--success
+2023-07-24 20:39:08.249299End!
