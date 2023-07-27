@@ -2,5 +2,6 @@
 /__pycache__
 /edi
 /pdf
-/log
 *.txt
+/log
+log/app_log.txt

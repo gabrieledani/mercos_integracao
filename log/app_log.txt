@@ -1234,3 +1234,122 @@ Downloading file: 1
 File C:\PythonProjects\mercos_integracao\pdf\8573.pdf downloaded
 2023-07-24 20:39:08.108279--success
 2023-07-24 20:39:08.249299End!
+2023-07-25 12:53:39.043728EXPORTA_PEDIDO_HENGST_G4_AUTO_PECAS_8574.dir
+2023-07-25 12:53:45.951756EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTR._DE_PECAS_8575.dir
+2023-07-25 12:53:53.261554EXPORTA_PEDIDO_HENGST_DIVAP_IMPORTADORA_E_DISTRIBUIDORA_DE_8578.dir
+2023-07-25 12:53:58.719415EXPORTA_PEDIDO_HENGST_FR_COMERCIO_DE_PECAS_AUTOMOTIVA_LTDA_8577.dir
+2023-07-25 12:54:06.671841EXPORTA_PEDIDO_HENGST_SOMAFORCE_DISTRIBUIDORA_DE_AUTOPECAS_8579.dir
+2023-07-25 12:53:33.322018Start
+Pedido Nº 8574 - G4 Auto Peças - Hengst
+8574
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8574.pdf downloaded
+2023-07-25 12:53:42.546714--success
+Pedido Nº 8575 - Eixo Sul - Matriz Fred. Westphalen - Hengst
+8575
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8575.pdf downloaded
+2023-07-25 12:53:48.969041--success
+Pedido Nº 8578 - Divap - Itajai SC - Hengst
+8578
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8578.pdf downloaded
+2023-07-25 12:53:56.323790--success
+Pedido Nº 8577 - Divap (FR) - Ijui - Hengst
+8577
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8577.pdf downloaded
+2023-07-25 12:54:01.771661--success
+Pedido Nº 8579 - SOMAFORCE DISTRIBUIDORA - Hengst
+8579
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8579.pdf downloaded
+2023-07-25 12:54:09.679851--success
+2023-07-25 12:54:09.824773End!
+2023-07-26 14:27:29.963857EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA_8576.dir
+2023-07-26 14:27:34.496546EXPORTA_PEDIDO_HENGST_RODODIS_COMERCIO_ATACADISTA_DE_PECAS_LTDA_-_ME_8557.dir
+2023-07-26 14:27:36.353813EXPORTA_PEDIDO_HENGST_RODODIS_COMERCIO_ATACADISTA_DE_PECAS_LTDA_-_ME_8580.dir
+2023-07-26 14:27:41.550476EXPORTA_PEDIDO_HENGST_MOTORTECH_8582.dir
+2023-07-26 14:27:46.651150EXPORTA_PEDIDO_HENGST_HS_PARTS_8583.dir
+2023-07-26 14:27:52.012089EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA-ME_8590.dir
+2023-07-26 14:27:57.031634EXPORTA_PEDIDO_HENGST_EIXO_SUL_DISTRIBUIDORA_DE_PECAS_LTDA_8591.dir
+2023-07-26 14:28:03.010237EXPORTA_PEDIDO_HENGST_CENTRAL_COM_8592.dir
+2023-07-26 14:27:27.610635Start
+Pedido Nº 8576 - Eixo Sul - São Miguel do Oeste - Hengst
+8576
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8576.pdf downloaded
+2023-07-26 14:27:33.018035--success
+Pedido Nº 8557 - Rododis - Hengst
+8557
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8557.pdf downloaded
+Pedido Nº 8580 - Rododis - Hengst
+8580
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8580.pdf downloaded
+2023-07-26 14:27:39.320546--success
+Pedido Nº 8582 - MTTK - Hengst
+8582
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8582.pdf downloaded
+2023-07-26 14:27:44.566937--success
+Pedido Nº 8583 - HS Parts - SK Parts - Hengst
+8583
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8583.pdf downloaded
+2023-07-26 14:27:49.692937--success
+Pedido Nº 8590 - Eixo Sul - Santa Maria - Hengst
+8590
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8590.pdf downloaded
+2023-07-26 14:27:55.007660--success
+Pedido Nº 8591 - Eixo Sul - São Miguel do Oeste - Hengst
+8591
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8591.pdf downloaded
+2023-07-26 14:28:00.021310--success
+Pedido Nº 8592 - Central da Injeção - Joinville - Hengst
+8592
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8592.pdf downloaded
+2023-07-26 14:28:05.990336--success
+2023-07-26 14:28:06.138879End!
+2023-07-27 11:36:57.392308EXPORTA_PEDIDO_HENGST_JG_DISTRIBUIDORA_DE_PECAS_LTDA_8595.dir
+2023-07-27 11:37:06.143193EXPORTA_PEDIDO_HENGST_DULUB_DISTRIBUIDORA_DE_FILTROS_E_8597.dir
+2023-07-27 11:37:10.383513EXPORTA_PEDIDO_HENGST_MUNDIAL_DISTRIBUIDORA_DE_AUTO_PECAS_8599.dir
+2023-07-27 11:37:14.317465EXPORTA_PEDIDO_HENGST_MUNDIAL_DISTRIBUIDORA_DE_AUTO_PECAS_8598.dir
+2023-07-27 11:37:19.457850EXPORTA_PEDIDO_HENGST_MACIEL_DISTRIBUIDORA_SJ_-_MATRIZ_8600.dir
+2023-07-27 11:37:24.410565EXPORTA_PEDIDO_HENGST_MACIEL_DISTRIBUIDORA_CHAP_8601.dir
+2023-07-27 11:36:55.078823Start
+Pedido Nº 8595 - JG Distribuidora - Hengst
+8595
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8595.pdf downloaded
+2023-07-27 11:37:00.343394--success
+Pedido Nº 8597 - Dulub - Hengst
+8597
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8597.pdf downloaded
+2023-07-27 11:37:09.118256--success
+Pedido Nº 8599 - Mundial - Hengst
+8599
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8599.pdf downloaded
+2023-07-27 11:37:13.203147--success
+Pedido Nº 8598 - Mundial - Hengst (Importação Exclusiva)
+8598
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8598.pdf downloaded
+2023-07-27 11:37:17.188050--success
+Pedido Nº 8600 - Maciel - São José - Hengst
+8600
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8600.pdf downloaded
+2023-07-27 11:37:22.332912--success
+Pedido Nº 8601 - Maciel - Chapecó - Hengst
+8601
+Downloading file: 1
+File C:\PythonProjects\mercos_integracao\pdf\8601.pdf downloaded
+2023-07-27 11:37:27.247421--success
+2023-07-27 11:37:27.384596End!

@@ -1,4 +1,4 @@
-# Import libraries
+# In[] Import libraries
 import configparser
 import os
 import datetime
@@ -14,6 +14,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
+# In[] Config parsing
 config = configparser.ConfigParser()
 config.read('config.ini')
 
@@ -33,6 +34,7 @@ imap_server = config['E_MAIL']['smtp_server']
 login = config['E_MAIL']['login']
 password = config['E_MAIL']['password']
 
+# In[] Send
 def send_mail(filename,subject,body):
 
     msg = MIMEMultipart()
@@ -56,14 +58,14 @@ def send_mail(filename,subject,body):
             smtpObj.login(login, password)
             smtpObj.sendmail(sender_email, receiver_email, msg.as_string())
             log_file.write(str(datetime.datetime.now())+'--success\n')
-            print('success')
+            print('Sent Success!')
             return 'success'
     except Exception as e:
-        print(e)
+        print('Send Error:',e)
         log_file.write(str(datetime.datetime.now())+'--'+str(e)+'\n')
         return e
 
-
+# In[] Read
 def read_mail():
     # get unseen emails sent by vedafil from INBOX folder
     mailbox = MailBox(imap_server).login(login, password, 'INBOX')
@@ -124,35 +126,31 @@ def read_mail():
             pdf = open(os.path.join(dir_pdf,file), 'wb')
             pdf.write(response.content)
             pdf.close()
-            print("File ", os.path.join(dir_pdf,pedido+".pdf"), " downloaded")
+            print("PDF File ", os.path.join(dir_pdf,pedido+".pdf"), " downloaded")
             log_file.write("File "+ os.path.join(dir_pdf,pedido+".pdf")+ " downloaded\n")
 
             #Generate EDI from PDF
-            error = 0
             edi_filename = ''
             edi_filename = processa_file_pdf.processa_file(file,dir_edi,dir_pdf,dir_log)
-            print('Arquivo:',edi_filename)
+            print('EDI File:',edi_filename)
             try:
                 os.rename(os.path.join(dir_pdf,file) , os.path.join(dir_pdf,file+'_ok'))
             except:
                 os.rename(os.path.join(dir_pdf,file) , os.path.join(dir_pdf,file+'_erro'))
-                error = 1
-        print('Erro:',error)
-        if error == 0 and edi_filename != '' and edi_filename != 'error':
-            #print(edi_filename,subject,content)
+        if edi_filename != '' and edi_filename != 'error':
+            #Send EDI file to e-mail
             error = send_mail(edi_filename,subject,content)
             if error == 'success':
                 try:
                     os.rename(os.path.join(dir_edi,edi_filename) , os.path.join(dir_edi,edi_filename+'_ok'))
-                    #os.rename(os.path.join(dir_edi,edi_filename+'_ok') , os.path.join(dir_edi,edi_filename))
                 except:
                     os.rename(os.path.join(dir_edi,edi_filename) , os.path.join(dir_edi,edi_filename+'_erro'))
             else:
-                print('***************',edi_filename)
+                print('Sending error:',edi_filename)
         else:
-            print('Erro:',error,'Arquivo:',edi_filename)
+            print('EDI File converting error:',file)
 
-
+# In[] Main
 if __name__ == '__main__':
     #Read new e-mails
     print('Start')
